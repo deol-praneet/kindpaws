@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kind Paws Dog Shelter</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, footer { background: #f79489; color: white; padding: 1em; text-align: center; }
+    nav a { margin: 0 15px; color: white; text-decoration: none; }
+    .hero { background: #ffe0dc; padding: 2em; text-align: center; }
+    .hero button { margin: 1em; padding: 1em; background: #f79489; color: white; border: none; }
+    .section { padding: 2em; }
+    .featured-pets, .adopt-list { display: flex; flex-wrap: wrap; gap: 1em; }
+    .pet-card { border: 1px solid #ccc; padding: 1em; width: 200px; }
+    form { display: flex; flex-direction: column; max-width: 400px; margin: auto; }
+    input, select, textarea, button { margin: 0.5em 0; padding: 0.5em; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kind Paws</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#adopt">Adopt</a>
+      <a href="#donate">Donate</a>
+      <a href="#volunteer">Volunteer</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h2>Welcome to Kind Paws!</h2>
+      <p>Your new best friend is waiting for you.</p>
+      <button>Adopt Now</button>
+      <button>Donate</button>
+    </section>
+
+    <section class="section featured-pets">
+      <div class="pet-card">
+        <img src="dog1.jpg" alt="Dog 1" width="100%" />
+        <h3>Bella</h3>
+        <p>2 y/o Labrador, friendly and playful.</p>
+      </div>
+      <div class="pet-card">
+        <img src="dog2.jpg" alt="Dog 2" width="100%" />
+        <h3>Max</h3>
+        <p>3 y/o Beagle, loves kids and cuddles.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Kind Paws</h2>
+      <p>Founded in 2010, our mission is to rescue and rehome dogs in need.</p>
+      <p>"Kind Paws helped us find our best friend!" – The Johnson Family</p>
+      <p>Contact us: kindpaws@shelter.org</p>
+    </section>
+
+    <section id="adopt" class="section">
+      <h2>Adopt a Dog</h2>
+      <label>Filter by:</label>
+      <select><option>Breed</option></select>
+      <select><option>Size</option></select>
+      <select><option>Age</option></select>
+      <div class="adopt-list">
+        <div class="pet-card">
+          <img src="dog3.jpg" alt="Dog 3" width="100%" />
+          <h3>Luna</h3>
+          <p>1 y/o Terrier. Energetic and sweet.</p>
+          <button>Adopt Now</button>
+        </div>
+        <div class="pet-card">
+          <img src="dog4.jpg" alt="Dog 4" width="100%" />
+          <h3>Charlie</h3>
+          <p>5 y/o Bulldog. Calm and loving.</p>
+          <button>Adopt Now</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="donate" class="section">
+      <h2>Donate to Kind Paws</h2>
+      <p>Your donations help feed, house, and care for our dogs.</p>
+      <form>
+        <label>Donation Amount</label>
+        <input type="number" placeholder="$50" />
+        <label>Frequency</label>
+        <select>
+          <option>One-Time</option>
+          <option>Monthly</option>
+        </select>
+        <label>Payment Method</label>
+        <select>
+          <option>Credit Card</option>
+          <option>PayPal</option>
+        </select>
+        <button type="submit">Donate</button>
+      </form>
+    </section>
+
+    <section id="volunteer" class="section">
+      <h2>Volunteer With Us</h2>
+      <p>We welcome volunteers to help with walking dogs, cleaning, events, and more.</p>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="text" placeholder="Availability (e.g., weekends)" />
+        <button type="submit">Join Our Team</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact us at kindpaws@shelter.org | Follow us @KindPaws on social media</p>
+  </footer>
+</body>
+</html>
